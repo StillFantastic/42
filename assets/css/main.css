@@ -2735,6 +2735,7 @@
 		display: inline-block;
 		font-weight: 300;
 		height: 3em;
+		width: 100%;
 		line-height: 3em;
 		padding: 0 2.25em;
 		text-align: center;
