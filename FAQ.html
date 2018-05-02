@@ -6,17 +6,16 @@
 -->
 <html>
 	<head>
-		<title>FAQ</title>
+		<title>X School FAQ</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/custom.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<style type="text/css">
-			.custom-color1{
-				background-color: rgba(39, 40, 51, 0.965)
-			}
+			
 		</style>
 	</head>
 	<body>
@@ -24,7 +23,7 @@
 
 			<!-- Header -->
 				<header id="header">
-					<h1 id="logo"><a href="index.html" style="font-size:35px">X School</a></h1>
+					<h1 id="logo"><a href="index.html" style="font-size:30px">X School</a></h1>
 					<nav id="nav">
 						<ul>
 							<li><a href="index.html">Home</a></li>
@@ -55,7 +54,7 @@
 				<div id="main" class="wrapper style1">
 					<div class="container">
 						<header class="major">
-							<h2 style="font-size:50px">FAQ</h2>
+							<h2 style="font-size:50px">F.A.Q</h2>
 							<p style="font-size:30px">我愛 Pusheen &lt;3 </p>
 						</header>
 					</div>
@@ -93,8 +92,9 @@
 
 	</body>
 </html>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script type="text/javascript">
+
+	// Data array
 	var FAQs = [
 		{
 		    index:"1",
@@ -199,15 +199,15 @@
 	]
 
 	var container = $('#FAQ-Block')
-	for(let i = 0; i < FAQs.length; i++){
-		container.append(creatBlock(i+1, FAQs[i].title, FAQs[i].answer))
-	}
+
+	// Append blocks
+	for(let i = 0; i < FAQs.length; i++) container.append(creatBlock(i+1, FAQs[i].title, FAQs[i].answer))
+
 	function creatBlock(index, title, answer){
 		let color
 		if (index % 2) color = 'custom-color1'
 		else color = 'style1'
-		let key = `<div class="wrapper ${color}"><div class="container"><h3>${title}</h3><hr><p>${answer}</p></div></div>`
-		return $(key)
+		return $(`<div class="wrapper ${color}"><div class="container"><h3>${title}</h3><hr><p>${answer}</p></div></div>`)
 	}
 
 </script>
