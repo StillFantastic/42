@@ -17,7 +17,49 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<style>
         	@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+        	@font-face {
+				font-family: 'Material Icons';
+				font-style: normal;
+				font-weight: 400;
+				src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+				src: local('Material Icons'),
+			    local('MaterialIcons-Regular'),
+			    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+			    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+			    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+			}
+			.material-icons {
+			  font-family: 'Material Icons';
+			  font-weight: normal;
+			  font-style: normal;
+			  font-size: 24px;  /* Preferred icon size */
+			  display: inline-block;
+			  line-height: 1;
+			  text-transform: none;
+			  letter-spacing: normal;
+			  word-wrap: normal;
+			  white-space: nowrap;
+			  direction: ltr;
+
+			  /* Support for all WebKit browsers. */
+			  -webkit-font-smoothing: antialiased;
+			  /* Support for Safari and Chrome. */
+			  text-rendering: optimizeLegibility;
+
+			  /* Support for Firefox. */
+			  -moz-osx-font-smoothing: grayscale;
+
+			  /* Support for IE. */
+			  font-feature-settings: 'liga';
+			}
+			.material-icons.md-18 { font-size: 18px; }
+			.material-icons.md-24 { font-size: 24px; }
+			.material-icons.md-36 { font-size: 36px; }
+			.material-icons.md-48 { font-size: 48px; }
+			.material-icons.md-96 { font-size: 96px; }
     	</style>
+    	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 	</head>
 	<body class="landing">
 		<div id="page-wrapper">
@@ -132,19 +174,26 @@
 			<!-- Three -->
 				<section id="three" class="spotlight style3 left">
 					<span class="image fit main bottom"><img src="images/42_background.png" alt="" /></span>
-					<div class="content" style="width: 90%">
+					<div class="content" style="width: 90%; opacity: 1">
 						<div style="width: 40%; float: left; text-align: center">
 							<header>
-								<h2>Interdum felis blandit praesent sed augue</h2>
-								<p>Accumsan integer ultricies aliquam vel massa sapien phasellus</p>
+								<h2>Our Mission</h2>
+								<p class="beauty"><h2 class="beauty">為什麼想建立這所學校?</h2></p>
 							</header>
-							<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
-							<ul class="actions">
-								<li><a href="#" class="button">Learn More</a></li>
+							<ul class="beauty">
+								<li>減少學習的財務負擔</li>
+								<li>培養數位化世界所需的技能</li>
+								<li>提供更有效率的學習方式</li>
 							</ul>
+							<p class="beauty">
+								為了打破現有高等教育的屏障，法國電信集團Free創辦人Xavier Niel，決定自己獨資成立新學校：不需要學費，減輕學生經濟負擔；強調「做中學」，沒有教科書、沒有老師，學生透過實際解決一個個任務挑戰，累積寫程式的功力。2013年正式打造了School 42。
+							</p>
 						</div>
-						<div style="float: left; padding-left: 70px; padding-top: 50px; width: 300px">
+						<div style="float: left; padding-left: 70px; width: 600px">
 							<iframe width="500" height="282" src="https://www.youtube.com/embed/KoJqAexpTPM?autohide=2" frameborder="0" allowfullscreen></iframe>
+							<ul class="actions" style="width: 100%; text-align: center; padding-top: 50px">
+								<li><a href="https://www.42.us.org/innovation/our-mission-disrupting-engineering-education/" class="button">Learn More</a></li>
+							</ul>
 						</div>
 					</div>
 					<a href="#four" class="goto-next scrolly">Next</a>
@@ -160,33 +209,18 @@
 						<div class="box alt">
 							<div class="row uniform">
 								<section class="4u 6u(medium) 12u$(xsmall)">
-									<span class="icon alt major fa-area-chart"></span>
+									<i class="material-icons md-96">videogame_asset</i>
 									<h3>Ipsum sed commodo</h3>
 									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
 								</section>
 								<section class="4u 6u$(medium) 12u$(xsmall)">
-									<span class="icon alt major fa-comment"></span>
+									<i class="material-icons md-96">pool</i>
 									<h3>Eleifend lorem ornare</h3>
 									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
 								</section>
 								<section class="4u$ 6u(medium) 12u$(xsmall)">
-									<span class="icon alt major fa-flask"></span>
+									<i class="material-icons md-96">laptop_windows</i>
 									<h3>Cubilia cep lobortis</h3>
-									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
-								</section>
-								<section class="4u 6u$(medium) 12u$(xsmall)">
-									<span class="icon alt major fa-paper-plane"></span>
-									<h3>Non semper interdum</h3>
-									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
-								</section>
-								<section class="4u 6u(medium) 12u$(xsmall)">
-									<span class="icon alt major fa-file"></span>
-									<h3>Odio laoreet accumsan</h3>
-									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
-								</section>
-								<section class="4u$ 6u$(medium) 12u$(xsmall)">
-									<span class="icon alt major fa-lock"></span>
-									<h3>Massa arcu accumsan</h3>
 									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
 								</section>
 							</div>
